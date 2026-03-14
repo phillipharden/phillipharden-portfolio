@@ -1,8 +1,18 @@
 import skateChurch from "../assets/images/skate-church.png";
 import desciple from "../assets/images/13th-desciple.png";
 import pizzys from "../assets/images/pizzys-pizza.png";
+import apiFun from "../assets/images/api-fun-meta-img.png";
 
 const projects = [
+   {
+    title: "API Fun",
+    description:
+      "API Fun is a creative playground for exploring real APIs. Search Spotify artists, albums, songs, and discover movies all in one place.",
+    tech: ["React", "JavaScript", "CSS", "Responsive Design"],
+    image: apiFun,
+    live: "https://freshfindsatl.com/",
+    github: "https://github.com/phillipharden/playfit",
+  },
   {
     title: "Skate Church ATL",
     description:
