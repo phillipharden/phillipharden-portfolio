@@ -56,7 +56,6 @@ const Hero = () => {
 
     setGlow({ x, y });
 
-    const imageWrap = rect.width * 0.5;
     const centerX = rect.left + rect.width * 0.75;
     const centerY = rect.top + rect.height * 0.5;
 
@@ -96,9 +95,10 @@ const Hero = () => {
                 <span>{activeContent.label}</span>
               </div>
 
-              <h1 className="hero-title fw-bold mb-3">{activeContent.title}</h1>
-
-              <p className="hero-text fs-5 mb-4">{activeContent.text}</p>
+              <div className="hero-content-shell mb-4">
+                <h1 className="hero-title fw-bold mb-3">{activeContent.title}</h1>
+                <p className="hero-text fs-5 mb-0">{activeContent.text}</p>
+              </div>
 
               <div className="d-flex flex-wrap gap-2 mb-4">
                 {Object.entries(heroModes).map(([key, value]) => (
@@ -139,7 +139,7 @@ const Hero = () => {
 
                 <img
                   src={HeroImage}
-                  alt="Illustration of Phil Harden holding a skateboard and laptop"
+                  alt="Illustration of Phillip Harden holding a skateboard and laptop"
                   className="hero-image img-fluid"
                 />
               </div>
